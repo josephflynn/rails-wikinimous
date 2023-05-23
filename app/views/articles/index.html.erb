@@ -1,0 +1,8 @@
+<% @articles.each do |article| %>
+  <div>
+      <%= link_to article_path(article) do %>
+        <label for="scales"><%= article.title %></label>
+      <% end %>
+      <p><%= article.content.split('.').first %></p>
+  </div>
+<% end %> 
